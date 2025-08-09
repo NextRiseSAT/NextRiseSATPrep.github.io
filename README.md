@@ -212,56 +212,115 @@
             margin-bottom: 1rem;
         }
         /* Contact Page */
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite SAT Tutoring</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a.active {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #fff;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elite SAT Tutoring</h1>
+    <nav class="nav-links">
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('about')">About</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <div id="home" class="page active container">
+    <h2>Welcome</h2>
+    <p>Achieve your dream SAT score with personalized tutoring designed to fit your needs.</p>
+  </div>
+
+  <div id="about" class="page container">
+    <h2>About Us</h2>
+    <p>We specialize in boosting SAT scores with proven strategies, targeted practice, and expert feedback.</p>
+  </div>
+
+  <div id="contact" class="page container">
+    <h2>Contact Us</h2>
+    <p>Please fill out the form below and we'll get back to you soon.</p>
+    <iframe src="https://forms.gle/mSgkkcLViEFWzhKF8"></iframe>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      // Hide all pages
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+
+      // Remove 'active' class from all nav links
+      document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+
+      // Show the selected page
+      document.getElementById(pageId).classList.add('active');
+
+      // Highlight the active link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('onclick') === `showPage('${pageId}')`) {
+          link.classList.add('active');
         }
-        .contact-form {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 2rem;
-            border-radius: 15px;
-        }
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-        }
-        .contact-icon {
-            font-size: 1.5rem;
-            color: #667eea;
-        }
+      });
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .nav-links {
