@@ -322,7 +322,7 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <a href="#" class="logo" onclick="showPage('home', event)">Elite SAT Tutoring</a>
+      <a href="#" class="logo" onclick="showPage('home', event)">NEXT RISE SAT PREP</a>
       <ul class="nav-links">
         <li><a href="#" onclick="showPage('home', event)" class="active">Home</a></li>
         <li><a href="#" onclick="showPage('about', event)">About</a></li>
