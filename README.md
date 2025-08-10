@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Elite SAT Tutoring - Boost Your Score Today</title>
+<title>NEXT RISE SAT PREP - Boost Your Score Today</title>
 <style>
   /* Reset and base */
   * {
