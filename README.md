@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -17,13 +18,11 @@
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
   }
-
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
-
   /* Navigation */
   nav {
     background: rgba(255, 255, 255, 0.95);
@@ -65,7 +64,6 @@
     color: #667eea;
     background: rgba(102, 126, 234, 0.1);
   }
-
   /* Page Sections */
   .page {
     display: none;
@@ -84,7 +82,6 @@
     backdrop-filter: blur(10px);
     animation: fadeIn 0.6s ease-out;
   }
-
   /* Home Page */
   .hero {
     text-align: center;
@@ -140,7 +137,6 @@
     margin-bottom: 1rem;
     color: #667eea;
   }
-
   /* About Page */
   .score-highlight {
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -159,7 +155,6 @@
     margin-top: 2rem;
     color: #667eea;
   }
-
   /* Services Page */
   .service-cards {
     display: grid;
@@ -201,7 +196,6 @@
     border-radius: 20px;
     font-size: 0.9rem;
   }
-
   /* Testimonials Page */
   .testimonial {
     background: rgba(255, 255, 255, 0.8);
@@ -225,7 +219,6 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-
   /* Contact Page */
   .contact-content {
     display: grid;
@@ -281,7 +274,6 @@
     margin: 0;
     color: #667eea;
   }
-
   /* Quick start box */
   .quick-start {
     margin-top: 2rem;
@@ -293,7 +285,6 @@
     color: #667eea;
     margin-bottom: 1rem;
   }
-
   /* Mobile Responsiveness */
   @media (max-width: 768px) {
     .nav-links {
@@ -314,7 +305,6 @@
       height: auto !important;
     }
   }
-
   /* Animations */
   @keyframes fadeIn {
     from {
@@ -342,7 +332,6 @@
       </ul>
     </div>
   </nav>
-
   <!-- Home Page -->
   <div id="home" class="page active">
     <div class="container">
@@ -372,7 +361,6 @@
       </div>
     </div>
   </div>
-
   <!-- About Page -->
   <div id="about" class="page">
     <div class="container">
@@ -392,7 +380,6 @@
       </div>
     </div>
   </div>
-
   <!-- Services & Pricing Page -->
   <div id="services" class="page">
     <div class="container">
@@ -429,7 +416,6 @@
         </div>
       </div>
     </div>
-
   <!-- Testimonials Page -->
   <div id="testimonials" class="page">
     <div class="container">
@@ -454,7 +440,6 @@
       </div>
     </div>
   </div>
-
   <!-- Contact Page -->
   <div id="contact" class="page">
     <div class="container">
@@ -489,7 +474,6 @@
       </div>
     </div>
   </div>
-
 <script>
   // Show the selected page and update nav active state
   function showPage(pageId, event) {
@@ -502,7 +486,6 @@
         page.classList.remove('active');
       }
     });
-
     // Update nav link active state
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
