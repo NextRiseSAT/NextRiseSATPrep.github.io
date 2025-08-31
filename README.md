@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 20px;
+    padding: 1rem;
   }
   .logo {
     font-size: 1.8rem;
