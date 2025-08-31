@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -35,7 +34,6 @@
   }
   nav .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   .logo {
