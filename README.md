@@ -34,7 +34,6 @@
   }
   nav .container {
     display: flex;
-    align-items: center;
   }
   .logo {
     font-size: 1.8rem;
