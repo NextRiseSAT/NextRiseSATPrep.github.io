@@ -36,7 +36,7 @@
   nav .container {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
   }
   .logo {
     font-size: 1.8rem;
